@@ -330,9 +330,9 @@ box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
 }
 .popular .course-item .info .title a{
   color: var(--second-color);
-font-size: 1.8rem;
-font-weight: 600;
-line-height: 1.67; /* 166.667% */
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67; /* 166.667% */
 }
 .popular .info .desc{
   color: #5F5B53;
@@ -343,27 +343,93 @@ line-height: 1.67; /* 166.667% */
 .popular .rating .value{
   margin-left: 6px;
   color: #FEA31B;
-font-size: 1.6rem;
-line-height: 1.75; /* 175% */
+  font-size: 1.6rem;
+  line-height: 1.75; /* 175% */
 }
 .popular .course-item .info desc{
   margin-top: 6px;
   color: #5F5B53;
-font-size: 1.4rem;
-line-height: 1.86; /* 185.714% */
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
 }
 .popular .course-item .foot{
   margin-top: 12px;
 }
 .popular .course-item .prcie{
   color: var(--second-color);
-font-size: 18px;
-font-weight: 600;
-line-height: 1.67; /* 166.667% */
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.67; /* 166.667% */
 }
 .popular .course-item .btn-book{
   border: none;
 }
 .popular .course-item .btn-book:hover{
   background: var(--primary-color);
+}
+
+/* ###### feedback ######### */
+.feedback{
+  padding: 96px 0;
+  margin-top: 135px;
+  background: #806f48;
+}
+.feedback .feedback-item{
+  display: flex;
+}
+.feedback .feedback-item .info .avatar{
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.feedback .feedback-item .info .desc-name{
+  margin-top: 18px;
+  width: 130px;
+  color: #F7F7F7;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42; /* 141.667% */
+}
+.feedback .feedback-item .info .desc-class{
+  margin-top: 4px;
+  width: 159px;
+  color: #BFBCB2;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+}
+.feedback .feedback-item .info .dots{
+  gap: 6px;
+  display: flex;
+  margin-top: 28px;
+}
+.feedback-item .info .dot{
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #634700;
+  cursor: pointer;
+}
+.feedback-item .info .dot.active{
+  background: var(--primary-color);
+  cursor: default;
+}
+
+.feedback .feedback-item .content{
+  width: 66%;
+  margin-left: auto;
+}
+.feedback .feedback-item .content .open-quotes{
+  width: 30px;
+  height: 28px;
+  fill: #634700;
+}
+.feedback .feedback-item .content blockquote{
+  margin-left: 30px;
+  width: 740px;
+  color: #FFF;
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 1.54; /* 153.846% */
 }
