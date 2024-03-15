@@ -369,65 +369,64 @@ box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
 }
 
 /* ###### feedback ######### */
-.feedback{
-  padding: 96px 0;
+.feedback {
   margin-top: 135px;
+  padding: 96px 0;
   background: #2E2100;
 }
-.feedback .feedback-item{
+.feedback-list {
   display: flex;
+  overflow: hidden;
 }
-.feedback .feedback-item .info .avatar{
+.feedback-item {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+}
+.feedback-item .avatar {
   width: 72px;
   height: 72px;
   border-radius: 50%;
   object-fit: cover;
 }
-.feedback .feedback-item .info .desc-name{
+.feedback .feedback-item .info .member-name {
   margin-top: 18px;
-  width: 130px;
   color: #F7F7F7;
   font-family: var(--font-heading);
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.42; /* 141.667% */
 }
-.feedback .feedback-item .info .desc-class{
+.feedback-item .info .desc {
   margin-top: 4px;
-  width: 159px;
   color: #BFBCB2;
   font-size: 1.4rem;
   line-height: 1.86; /* 185.714% */
 }
-.feedback .feedback-item .info .dots{
+.feedback-item .dots {
   gap: 6px;
   display: flex;
   margin-top: 28px;
 }
-.feedback-item .info .dot{
+.feedback-item .dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background: #634700;
   cursor: pointer;
 }
-.feedback-item .info .dot.active{
+.feedback-item .dot.active {
   background: var(--primary-color);
   cursor: default;
 }
 
-.feedback .feedback-item .content{
+.feedback-item .content {
   width: 66%;
   margin-left: auto;
 }
-.feedback .feedback-item .content .open-quotes{
-  width: 30px;
-  height: 28px;
-  fill: #634700;
-}
-.feedback .feedback-item .content blockquote{
+
+.feedback-item blockquote {
   margin-left: 30px;
-  width: 740px;
   color: #FFF;
   font-size: 2.6rem;
   font-style: italic;
