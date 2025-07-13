@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* de quy doi 1 rem = 10 pixel ta doi kich thuoc */
+  font-size: 62.5%;
+}
+
+/* khoi phuc co chu theo rem */
+body {
+  font-size: 1.6rem;
+}
